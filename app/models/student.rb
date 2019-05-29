@@ -1,6 +1,6 @@
 class Student < ApplicationRecord
 
-  def full_name
-    @full_name = (Student.first_name.to_s + Student.last_name.to_s)
+  def to_s
+    self.first_name + " " + self.last_name
   end
 end
