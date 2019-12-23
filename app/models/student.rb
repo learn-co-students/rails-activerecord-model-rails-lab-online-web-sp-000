@@ -1,9 +1,7 @@
 class Student < ActiveRecord::Base
 
-  def name
-    Student.all do |student|
-      @name = "#{student.first_name} #{student.last_name}"
-      @name = @name.to_s
+  def to_s
+      self.first_name.to_s + " " + self.last_name.to_s
     end
-  end
+
 end
