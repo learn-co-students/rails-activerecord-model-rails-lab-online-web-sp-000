@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Student do
+RSpec.describe Student, type: :model do
   before(:each) do
     @student = Student.create!(first_name: "Daenerys", last_name: "Targaryen")
   end
